@@ -1,35 +1,35 @@
 /* Ícones dentro da lista */
 ul li i { 
-  display: inline-block;
-  margin-right: 8px;
-  font-size: 18px;
-  color: #444444;
-  vertical-align: middle;
+    display: inline-block;
+    margin-right: 8px;
+    font-size: 18px;
+    color: #444444;
+    vertical-align: middle;
 }
 
 /* Botão de baixar currículo */
 .btn-curriculo {
-  display: inline-block;
-  background: #222;
-  color: #fff;
-  padding: 12px 20px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
+    display: inline-block;
+    background: #222;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 .btn-curriculo:hover {
-  background: #444;
-  transform: scale(1.03);
+    background: #444;
+    transform: scale(1.03);
 }
 
-/* Botão no modo escuro */
+/* Versão do botão no modo escuro */
 body.dark .btn-curriculo {
-  background: #fff;
-  color: #000;
+    background: #fff;
+    color: #000;
 }
 
 body.dark .btn-curriculo:hover {
-  background: #ddd;
+    background: #ddd;
 }
