@@ -1,10 +1,101 @@
+/* Estilos gerais */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f7f7f7;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Modo escuro */
+body.dark {
+    background: #121212;
+    color: #eaeaea;
+}
+
+/* Header */
+header {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    position: relative;
+}
+
+/* Botão modo escuro */
+#dark-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+body.dark #dark-toggle {
+    color: #f1c40f;
+}
+
+/* Seções */
+section {
+    background: #fff;
+    padding: 30px 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+body.dark section {
+    background: #1e1e1e;
+}
+
+/* Títulos */
+h2 {
+    color: #333;
+    border-left: 5px solid #222;
+    padding-left: 10px;
+}
+
+body.dark h2 {
+    color: #fff;
+    border-left-color: #f1c40f;
+}
+
+/* Lista */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #eee;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    transition: background 0.3s;
+}
+
+body.dark ul li {
+    background: #2a2a2a;
+}
+
 /* Ícones dentro da lista */
 ul li i { 
     display: inline-block;
     margin-right: 8px;
     font-size: 18px;
-    color: #444;
+    color: #444444;
     vertical-align: middle;
+}
+
+body.dark ul li i {
+    color: #f1c40f;
 }
 
 /* Botão de baixar currículo */
@@ -16,22 +107,31 @@ ul li i {
     border-radius: 6px;
     text-decoration: none;
     font-weight: bold;
-    transition: background 0.3s, transform 0.3s;
+    transition: 0.3s;
 }
 
-/* Hover do botão */
 .btn-curriculo:hover {
     background: #444;
     transform: scale(1.03);
 }
 
-/* Versão do botão no modo escuro */
+/* Botão no modo escuro */
 body.dark .btn-curriculo {
     background: #fff;
     color: #000;
 }
 
-/* Hover no modo escuro */
 body.dark .btn-curriculo:hover {
     background: #ddd;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #555;
+}
+
+body.dark footer {
+    color: #ccc;
 }
