@@ -86,7 +86,7 @@ body.dark ul li {
 }
 
 /* Ícones dentro da lista */
-ul li i { 
+ul li i {
     display: inline-block;
     margin-right: 8px;
     font-size: 18px;
@@ -96,6 +96,12 @@ ul li i {
 
 body.dark ul li i {
     color: #f1c40f;
+}
+
+/* NOVO: Container para alinhar o botão dentro da seção "Sobre Mim" */
+.curriculo-container {
+    text-align: center;
+    margin-top: 20px;
 }
 
 /* Botão de baixar currículo */
