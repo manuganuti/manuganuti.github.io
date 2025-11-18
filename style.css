@@ -3,7 +3,7 @@ ul li i {
     display: inline-block;
     margin-right: 8px;
     font-size: 18px;
-    color: #444444;
+    color: #444;
     vertical-align: middle;
 }
 
@@ -16,9 +16,10 @@ ul li i {
     border-radius: 6px;
     text-decoration: none;
     font-weight: bold;
-    transition: 0.3s;
+    transition: background 0.3s, transform 0.3s;
 }
 
+/* Hover do botão */
 .btn-curriculo:hover {
     background: #444;
     transform: scale(1.03);
@@ -30,6 +31,7 @@ body.dark .btn-curriculo {
     color: #000;
 }
 
+/* Hover no modo escuro */
 body.dark .btn-curriculo:hover {
     background: #ddd;
 }
