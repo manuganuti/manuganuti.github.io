@@ -1,5 +1,7 @@
 ul li i {
-    margin-right: 8px;
-    color: #444;
-    font-size: 18px;
+  display: inline-block;
+  margin-right: 8px;
+  font-size: 18px;
+  color: #444444;
+  vertical-align: middle;
 }
