@@ -139,12 +139,6 @@ body.dark ul li i {
     color: #f1c40f;
 }
 
-/* Botões Currículo */
-.curriculo-container {
-    text-align: center;
-    margin-top: 20px;
-}
-
 .btn-curriculo,
 .btn-curriculo-visual {
     display: inline-block;
@@ -185,3 +179,4 @@ footer {
 body.dark footer {
     color: #ccc;
 }
+
