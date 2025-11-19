@@ -66,21 +66,25 @@ header {
     position: relative;
 }
 
-/* Botão modo escuro */
+/* ---- Botão modo escuro (ATUALIZADO) ---- */
 #dark-toggle {
     position: absolute;
     top: 20px;
     right: 20px;
-    background: none;
-    border: none;
+    background: #000;
     color: #fff;
-    font-size: 24px;
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+    font-size: 20px;
     cursor: pointer;
 }
 
 body.dark #dark-toggle {
-    color: #f1c40f;
+    background: #fff;
+    color: #000;
 }
+/* --------------------------------------- */
 
 /* Seções */
 section {
@@ -164,19 +168,4 @@ body.dark .btn-curriculo-visual {
     color: #000;
 }
 
-body.dark .btn-curriculo:hover,
-body.dark .btn-curriculo-visual:hover {
-    background: #ddd;
-}
-
-/* Rodapé */
-footer {
-    text-align: center;
-    padding: 20px;
-    color: #555;
-}
-
-body.dark footer {
-    color: #ccc;
-}
-
+body.dark .btn-curriculo:hove
