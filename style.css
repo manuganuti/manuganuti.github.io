@@ -104,8 +104,24 @@ body.dark ul li i {
     margin-top: 20px;
 }
 
-/* Botão de baixar currículo */
+/* --- ESTILOS DOS BOTÕES UNIFICADOS --- */
+
+/* Botão de baixar currículo (PDF) */
 .btn-curriculo {
+    display: inline-block;
+    background: #222;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    /* Adiciona margem à direita para separar do botão visual */
+    margin-right: 10px;
+}
+
+/* Botão de baixar currículo (VISUAL) - NOVO */
+.btn-curriculo-visual {
     display: inline-block;
     background: #222;
     color: #fff;
@@ -116,18 +132,19 @@ body.dark ul li i {
     transition: 0.3s;
 }
 
-.btn-curriculo:hover {
+/* Hover para ambos os botões */
+.btn-curriculo:hover, .btn-curriculo-visual:hover {
     background: #444;
     transform: scale(1.03);
 }
 
-/* Botão no modo escuro */
-body.dark .btn-curriculo {
+/* Modo escuro para ambos os botões */
+body.dark .btn-curriculo, body.dark .btn-curriculo-visual {
     background: #fff;
     color: #000;
 }
 
-body.dark .btn-curriculo:hover {
+body.dark .btn-curriculo:hover, body.dark .btn-curriculo-visual:hover {
     background: #ddd;
 }
 
@@ -139,7 +156,5 @@ footer {
 }
 
 body.dark footer {
-    color: #ccc
-    
+    color: #ccc;
 }
-
