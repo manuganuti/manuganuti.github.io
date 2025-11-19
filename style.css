@@ -85,6 +85,16 @@ body.dark #dark-toggle {
     color: #000;
 }
 /* --------------------------------------- */
+header {
+    position: relative; /* garante que o botão fique preso ao header */
+}
+
+header h1, 
+header p {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
 
 /* Seções */
 section {
@@ -169,3 +179,4 @@ body.dark .btn-curriculo-visual {
 }
 
 body.dark .btn-curriculo:hove
+
