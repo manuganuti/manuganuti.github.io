@@ -7,10 +7,25 @@
     <title>Meu Portfólio - Manoella Cunha</title>
     <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+
+    <!-- Botão Dark Mode -->
     <button id="dark-toggle">
         <i class="fa-solid fa-moon"></i>
     </button>
+
+    <!-- NAVBAR (NOVO) -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#sobre">Sobre Mim</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="curriculo.pdf" download>Currículo</a></li>
+        </ul>
+    </nav>
+
     <header>
         <h1>Manoella Cunha</h1>
         <p>
@@ -27,15 +42,16 @@
             Estou em transição definitiva para a área de TI, buscando uma oportunidade onde eu possa aplicar <br>
             meus conhecimentos e continuar evoluindo.
         </p>
-     <div class="curriculo-container">
-    <a href="curriculo.pdf" download class="btn-curriculo">
-        📄 Baixar Currículo (PDF)
-    </a>
 
-    <a href="curriculo-visual.pdf" download class="btn-curriculo-visual">
-        🖼️ Baixar Currículo (Visual)
-    </a>
-</div>
+        <div class="curriculo-container">
+            <a href="curriculo.pdf" download class="btn-curriculo">
+                📄 Baixar Currículo (PDF)
+            </a>
+
+            <a href="curriculo-visual.pdf" download class="btn-curriculo-visual">
+                🖼️ Baixar Currículo (Visual)
+            </a>
+        </div>
     </section>
 
     <section id="skills">
@@ -58,7 +74,7 @@
         <p>Em construção.</p>
     </section>
 
-    <footer>
+    <footer id="contato">
         <h2>Contato</h2>
         <p>
             <i class="fa-solid fa-envelope"></i> manoellamdmoura@gmail.com<br>
@@ -66,9 +82,7 @@
             <a href="https://www.linkedin.com/in/manoella-dias-cunha" target="_blank">LinkedIn</a>
         </p>
     </footer>
+
     <script src="script.js"></script>
-    
 </body>
 </html>
-
-
