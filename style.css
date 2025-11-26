@@ -226,3 +226,9 @@ body.dark .btn-curriculo:hove
     background: #444;
 }
 
+#contato {
+    text-align: center;              /* centraliza texto e links */
+    display: flex;
+    flex-direction: column;
+    align-items: center;            /* garante centralização até dos itens em bloco */
+}
