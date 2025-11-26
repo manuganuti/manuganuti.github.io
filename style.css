@@ -1,234 +1,191 @@
 /* Estilos gerais */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background: #f7f7f7;
-    color: #333;
-    transition: background 0.3s, color 0.3s;
-}
-
-/* Modo escuro */
-body.dark {
-    background: #121212;
-    color: #eaeaea;
+    margin: 0; /* remove as margens padrão da página */
+    font-family: Arial, sans-serif; /* define a fonte do site */
+    line-height: 1.6; /* aumenta o espaçamento entre linhas para melhor leitura */
+    background: #f7f7f7; /* cor de fundo do site (modo claro) */
+    color: #333; /* cor padrão do texto */
 }
 
 /* --- NAVBAR --- */
 .navbar {
-    background: #222;
-    padding: 10px 0;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 999;
+    background: #222; /* fundo da barra de navegação */
+    padding: 10px 0; /* espaçamento vertical */
+    text-align: center; /* centraliza o conteúdo da navbar */
+    position: sticky; /* fixa no topo ao rolar */
+    top: 0; /* posição da navbar no topo */
+    z-index: 999; /* deixa a navbar acima dos outros elementos */
 }
 
 .navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    list-style: none; /* remove marcadores da lista */
+    margin: 0; /* remove margem padrão */
+    padding: 0; /* remove espaçamento interno */
 }
 
 .navbar ul li {
-    display: inline-block;
-    margin: 0 15px;
+    display: inline-block; /* coloca itens da navbar lado a lado */
+    margin: 0 15px; /* espaço entre os links */
 }
 
 .navbar ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 6px 8px;
-    transition: 0.3s;
+    color: #fff; /* cor do texto dos links */
+    text-decoration: none; /* remove sublinhado */
+    font-weight: bold; /* deixa o texto mais forte */
+    padding: 6px 8px; /* espaço interno */
+    transition: 0.3s; /* animação suave ao passar o mouse */
 }
 
 .navbar ul li a:hover {
-    color: #f1c40f;
-    transform: scale(1.05);
-}
-
-/* Modo escuro navbar */
-body.dark .navbar {
-    background: #1a1a1a;
-}
-
-body.dark .navbar ul li a {
-    color: #f5f5f5;
+    color: #f1c40f; /* muda cor ao passar o mouse */
+    transform: scale(1.05); /* aumenta levemente ao passar o mouse */
 }
 
 /* Header */
 header {
-    background: #222;
-    color: #fff;
-    text-align: center;
-    padding: 40px 20px;
-    position: relative;
+    background: #222; /* fundo escuro do cabeçalho */
+    color: #fff; /* texto branco */
+    text-align: center; /* centraliza o texto */
+    padding: 40px 20px; /* espaçamento interno */
+    position: relative; /* permite posicionar elementos dentro dele */
 }
 
-/* ---- Botão modo escuro (ATUALIZADO) ---- */
-#dark-toggle {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background: #000;
-    color: #fff;
-    padding: 10px;
-    border-radius: 50%;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-body.dark #dark-toggle {
-    background: #fff;
-    color: #000;
-}
-/* --------------------------------------- */
 header {
-    position: relative; /* garante que o botão fique preso ao header */
+    position: relative;
 }
 
 header h1, 
 header p {
-    margin: 0 auto;
-    text-align: center;
-    width: 100%;
+    margin: 0 auto; /* remove margem e centraliza automaticamente */
+    text-align: center; /* centraliza o texto */
+    width: 100%; /* ocupa 100% da largura */
 }
 
 /* Seções */
 section {
-    background: #fff;
-    padding: 30px 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    border-radius: 8px;
-    transition: background 0.3s;
+    background: #fff; /* fundo branco das seções */
+    padding: 30px 20px; /* espaçamento interno */
+    margin: 20px auto; /* espaçamento externo e centralização */
+    max-width: 800px; /* largura máxima das seções */
+    border-radius: 8px; /* bordas arredondadas */
 }
 
 body.dark section {
-    background: #1e1e1e;
+    background: #1e1e1e; /* fundo escuro nas seções */
 }
 
 /* Títulos */
 h2 {
-    color: #333;
-    border-left: 5px solid #222;
-    padding-left: 10px;
+    color: #333; /* cor do texto */
+    border-left: 5px solid #222; /* barra lateral decorativa */
+    padding-left: 10px; /* afastamento do texto */
 }
 
 body.dark h2 {
-    color: #fff;
-    border-left-color: #f1c40f;
+    color: #fff; /* texto claro no modo escuro */
+    border-left-color: #f1c40f; /* barra lateral amarela no modo escuro */
 }
 
 /* Lista */
 ul {
-    list-style: none;
-    padding: 0;
+    list-style: none; /* remove bolinhas da lista */
+    padding: 0; /* remove espaço interno */
 }
 
 ul li {
-    background: #eee;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-    transition: background 0.3s;
+    background: #eee; /* fundo do item */
+    margin: 5px 0; /* espaço entre itens */
+    padding: 10px; /* espaço interno */
+    border-radius: 6px; /* bordas arredondadas */
+    display: flex; /* coloca ícone e texto lado a lado */
+    align-items: center; /* alinha ícone verticalmente */
+    transition: background 0.3s; /* animação para modo escuro */
 }
 
 body.dark ul li {
-    background: #2a2a2a;
+    background: #2a2a2a; /* fundo no modo escuro */
 }
 
 /* Ícones dentro da lista */
 ul li i {
-    margin-right: 8px;
-    font-size: 18px;
-    color: #444;
+    margin-right: 8px; /* espaço entre ícone e texto */
+    font-size: 18px; /* tamanho do ícone */
+    color: #444; /* cor do ícone */
 }
 
 body.dark ul li i {
-    color: #f1c40f;
+    color: #f1c40f; /* ícones amarelos no modo escuro */
 }
 
 .btn-curriculo,
 .btn-curriculo-visual {
-    display: inline-block;
-    background: #222;
-    color: #fff;
-    padding: 12px 20px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-    margin-right: 10px;
+    display: inline-block; /* mantém o botão ao lado do outro */
+    background: #222; /* fundo escuro */
+    color: #fff; /* texto branco */
+    padding: 12px 20px; /* tamanho do botão */
+    border-radius: 6px; /* bordas arredondadas */
+    text-decoration: none; /* remove sublinhado */
+    font-weight: bold; /* texto forte */
+    transition: 0.3s; /* deixa o hover suave */
+    margin-right: 10px; /* espaço entre os botões */
 }
 
 .btn-curriculo:hover,
 .btn-curriculo-visual:hover {
-    background: #444;
-    transform: scale(1.03);
+    background: #444; /* muda fundo ao passar o mouse */
+    transform: scale(1.03); /* aumenta um pouco */
 }
 
 body.dark .btn-curriculo,
 body.dark .btn-curriculo-visual {
-    background: #fff;
-    color: #000;
+    background: #fff; /* fundo claro no modo escuro */
+    color: #000; /* texto escuro */
 }
-
-body.dark .btn-curriculo:hove
 
 /* Centralizar a seção de contato */
 #contato {
-    text-align: center;
+    text-align: center; /* centraliza o texto */
 }
 
 /* Para garantir que o link e o ícone fiquem alinhados */
 #contato p a {
-    display: inline-block;
-    margin-left: 5px;
+    display: inline-block; /* transforma o link em bloco para ajustar posicionamento */
+    margin-left: 5px; /* espaço entre ícone e texto */
 }
 
 #contato {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center; /* centraliza tudo dentro da seção */
+    display: flex; /* permite alinhar elementos com flexbox */
+    flex-direction: column; /* coloca itens um embaixo do outro */
+    align-items: center; /* garante centralização até dos itens em bloco */
 }
 
-#contato {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
+/* Estilo para o botão de e-mail */
 .btn-email,
 {
-    display: inline-flex;
-    align-items: center;
-    padding: 12px 18px;
-    border-radius: 8px;
-    font-weight: bold;
-    text-decoration: none;
-    margin-top: 10px;
-    gap: 8px;
-    transition: 0.3s;
+    display: inline-flex; /* deixa ícone + texto alinhados na horizontal */
+    align-items: center; /* alinha ícone com o texto */
+    padding: 12px 18px; /* tamanho do botão */
+    border-radius: 8px; /* bordas arredondadas */
+    font-weight: bold; /* texto forte */
+    text-decoration: none; /* remove sublinhado */
+    margin-top: 10px; /* espaço acima */
+    gap: 8px; /* espaço entre ícone e texto */
+    transition: 0.3s; /* deixa hover suave */
 }
 
 .btn-email {
-    background: #333;
-    color: white;
+    background: #333; /* fundo do botão */
+    color: white; /* cor do texto */
 }
+
 .btn-email:hover {
-    background: #444;
+    background: #444; /* botão mais claro no hover */
 }
 
 #contato {
-    text-align: center;              /* centraliza texto e links */
-    display: flex;
-    flex-direction: column;
-    align-items: center;            /* garante centralização até dos itens em bloco */
+    text-align: center; /* centraliza todo o texto */
+    display: flex; /* organiza elementos com flexbox */
+    flex-direction: column; /* coloca elementos em coluna */
+    align-items: center; /* centraliza tudo horizontalmente */
 }
