@@ -180,3 +180,16 @@ body.dark .btn-curriculo-visual {
 
 body.dark .btn-curriculo:hove
 
+/* Centralizar a seção de contato */
+#contato {
+    text-align: center;
+}
+
+/* Para garantir que o link e o ícone fiquem alinhados */
+#contato p a {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+
+
