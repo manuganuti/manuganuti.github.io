@@ -205,5 +205,24 @@ body.dark .btn-curriculo:hove
     align-items: center;
 }
 
+.btn-email,
+{
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 10px;
+    gap: 8px;
+    transition: 0.3s;
+}
 
+.btn-email {
+    background: #333;
+    color: white;
+}
+.btn-email:hover {
+    background: #444;
+}
 
