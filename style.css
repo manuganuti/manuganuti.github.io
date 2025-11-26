@@ -177,10 +177,14 @@ body.dark .btn-curriculo-visual {
 .btn-email {
     background: #333; /* fundo do botão */
     color: white; /* cor do texto */
+    flex-direction: column;
+    align-items: center;
 }
 
 .btn-email:hover {
     background: #444; /* botão mais claro no hover */
+    flex-direction: column;
+    align-items: center;
 }
 
 #contato {
@@ -189,3 +193,4 @@ body.dark .btn-curriculo-visual {
     flex-direction: column; /* coloca elementos em coluna */
     align-items: center; /* centraliza tudo horizontalmente */
 }
+
