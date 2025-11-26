@@ -1,62 +1,72 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
+<!DOCTYPE html> <!-- Define que o documento é HTML5 -->
+<html lang="pt-BR"> <!-- Define o idioma da página como português do Brasil -->
+<head> <!-- Início da seção de configurações e importações -->
+
+    <!-- Importa ícones do Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meu Portfólio - Manoella Cunha</title>
+
+    <meta charset="UTF-8" /> <!-- Define suporte para caracteres acentuados -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Torna o site responsivo no celular -->
+
+    <title>Meu Portfólio - Manoella Cunha</title> <!-- Nome exibido na aba do navegador -->
+
+    <!-- Link para o arquivo de estilos -->
     <link rel="stylesheet" href="style.css" />
+
 </head>
 
-<body>
+<body> <!-- Início do conteúdo visível da página -->
 
     <!-- Botão Dark Mode -->
-    <button id="dark-toggle">
-        <i class="fa-solid fa-moon"></i>
+    <button id="dark-toggle"> <!-- Botão que troca entre claro/escuro -->
+        <i class="fa-solid fa-moon"></i> <!-- Ícone inicial (lua) -->
     </button>
 
-    <!-- NAVBAR (NOVO) -->
-    <nav class="navbar">
-        <ul>
-            <li><a href="#sobre">Sobre Mim</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#contato">Contato</a></li>
+    <!-- NAVBAR -->
+    <nav class="navbar"> <!-- Menu de navegação -->
+        <ul> <!-- Lista de links -->
+            <li><a href="#sobre">Sobre Mim</a></li> <!-- Link para a seção Sobre Mim -->
+            <li><a href="#skills">Skills</a></li> <!-- Link para Skills -->
+            <li><a href="#projetos">Projetos</a></li> <!-- Link para Projetos -->
+            <li><a href="#contato">Contato</a></li> <!-- Link para Contato -->
         </ul>
     </nav>
 
-    <header>
-        <h1>Manoella Cunha</h1>
-        <p>
+    <header> <!-- Cabeçalho da página -->
+        <h1>Manoella Cunha</h1> <!-- Título principal -->
+
+        <p> <!-- Descrição resumida -->
             Técnica em Manutenção de Computadores e Celulares | Manutenção de Hardware |<br>
             Suporte Técnico | Formada em Gestão da TI | Aberta a oportunidades na área de Tecnologia
         </p>
     </header>
 
-    <section id="sobre">
-        <h2>Sobre Mim</h2>
-        <p>
+    <section id="sobre"> <!-- Seção Sobre Mim -->
+        <h2>Sobre Mim</h2> <!-- Título da seção -->
+
+        <p> <!-- Texto explicativo -->
             Sou formada em Gestão da Tecnologia da Informação e atuo com suporte técnico de forma autônoma desde 2020.<br>
             Tenho experiência com manutenção de computadores, atendimento ao usuário e solução de problemas.<br>
             Estou em transição definitiva para a área de TI, buscando uma oportunidade onde eu possa aplicar <br>
             meus conhecimentos e continuar evoluindo.
         </p>
 
-        <div class="curriculo-container">
-            <a href="curriculo.pdf" download class="btn-curriculo">
+        <div class="curriculo-container"> <!-- Contêiner para os botões de currículo -->
+            <a href="curriculo.pdf" download class="btn-curriculo"> <!-- Botão baixa PDF -->
                 📄 Baixar Currículo (PDF)
             </a>
 
-            <a href="curriculo-visual.pdf" download class="btn-curriculo-visual">
+            <a href="curriculo-visual.pdf" download class="btn-curriculo-visual"> <!-- Botão baixa versão visual -->
                 🖼️ Baixar Currículo (Visual)
             </a>
         </div>
     </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li><i class="fa-solid fa-headset"></i> Suporte Técnico</li>
+    <section id="skills"> <!-- Seção de habilidades -->
+        <h2>Skills</h2> <!-- Título da seção -->
+
+        <ul> <!-- Lista de Skills -->
+            <li><i class="fa-solid fa-headset"></i> Suporte Técnico</li> <!-- Ícone + texto -->
             <li><i class="fa-solid fa-diagram-project"></i> ITIL 4 Foundation</li>
             <li><i class="fa-solid fa-shield-halved"></i> LGPD (noções básicas)</li>
             <li><i class="fa-solid fa-network-wired"></i> Introdução a Redes</li>
@@ -68,26 +78,27 @@
         </ul>
     </section>
 
-    <section id="projetos">
-        <h2>Projetos</h2>
-        <p>Em construção.</p>
+    <section id="projetos"> <!-- Seção de projetos -->
+        <h2>Projetos</h2> <!-- Título da seção -->
+        <p>Em construção.</p> <!-- Texto provisório -->
     </section>
 
-    <footer id="contato">
-        <h2>Contato</h2>
-        <p>
-            <i class="fa-solid fa-envelope"></i> manoellamdmoura@gmail.com<br>
-            <i class="fa-brands fa-linkedin"></i>
-            <a href="https://www.linkedin.com/in/manoella-dias-cunha" target="_blank">LinkedIn</a>
-        </p>
+    <footer id="contato"> <!-- Rodapé com informações de contato -->
+        <h2>Contato</h2> <!-- Título da seção -->
+
+        <!-- Botão de enviar e-mail -->
+        <a href="mailto:manoellamdmoura@gmail.com" class="btn-email">
+            <i class="fa-solid fa-envelope"></i> manoellamdmoura@gmail.com
+        </a>
+
+        <!-- Link do LinkedIn -->
+        <a href="https://www.linkedin.com/in/manoella-dias-cunha" 
+           target="_blank" class="btn-linkedin">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+        </a>
     </footer>
 
-    <script src="script.js"></script>
-    <a href="mailto:manoellamdmoura@gmail.com" class="btn-email">
-    <i class="fa-solid fa-envelope"></i> Email: manoellamdmoura@gmail.com
-</a>
-</body>
-</html>
+    <script src="script.js"></script> <!-- Importa o arquivo JavaScript -->
 
-
-
+</body> <!-- Fim do corpo da página -->
+</html> <!-- Fim do documento -->
